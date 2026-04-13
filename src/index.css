@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-gray-100 min-h-screen antialiased overflow-x-hidden;
+  }
+  
+  ::selection {
+    @apply bg-danger text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-dark-card/60 backdrop-blur-md border border-dark-border shadow-xl;
+  }
+  
+  .glass-card-hover {
+    @apply hover:border-danger/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.2)] transition-all duration-300;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 bg-danger hover:bg-danger-hover text-white rounded-md font-medium transition-colors;
+  }
+
+  .btn-outline {
+    @apply px-4 py-2 border border-dark-border hover:border-gray-500 hover:bg-white/5 text-white rounded-md font-medium transition-colors;
+  }
+}
+
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(
+    circle at top right,
+    rgba(239, 68, 68, 0.15) 0%,
+    rgba(10, 10, 10, 1) 40%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.aurora-accent {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 50vw;
+  height: 50vh;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(220, 38, 38, 0.2) 0%,
+    transparent 70%
+  );
+  filter: blur(80px);
+  z-index: -1;
+  animation: aurora 15s ease-in-out infinite alternate;
+}
+
+.aurora-accent-2 {
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  width: 60vw;
+  height: 60vh;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(185, 28, 28, 0.15) 0%,
+    transparent 70%
+  );
+  filter: blur(100px);
+  z-index: -1;
+  animation: aurora 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(5%, 10%) scale(1.1);
+  }
+  100% {
+    transform: translate(-5%, 5%) scale(0.9);
+  }
+}

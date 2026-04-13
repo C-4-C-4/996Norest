@@ -1,0 +1,48 @@
+# Database
+database.sqlite
+database.sqlite-journal
+database.sqlite-wal
+database.sqlite-shm
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build & Dependencies
+node_modules
+dist
+dist-ssr
+.cache
+.vercel
+.wrangler
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.zip
+.trae
+.node_modules

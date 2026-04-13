@@ -1,0 +1,11 @@
+name = "norest"
+compatibility_date = "2024-04-13"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "norest-db"
+database_id = "xxx" # 将在此处填入你在 Cloudflare 创建的 D1 ID
+
+[vars]
+JWT_SECRET = "xxx" # 请在部署前或控制台修改为真正的安全密钥
