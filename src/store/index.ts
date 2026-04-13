@@ -22,10 +22,10 @@ interface AppState {
 export const useStore = create<AppState>((set, get) => ({
   companies: [],
   settings: {
-    disclaimer: '本站内容均为个人经历陈述与公开材料索引。本站不对其中提到的任何公司或个人做最终法律定性。请阅读者注意甄别事实与主观观点，一切以法律裁判为准。',
-    homeTitle: '公开的[秘密]，不再被掩盖',
-    homeDescription: '关于劣质公司欠薪、强制996与霸王条款的公开材料整理（持续更新）',
-    footerDescription: '本站内容性质：信息整理 / 个人经历陈述 / 材料索引\n所有内容仅陈述可核验事实，并附有相应证据。请明确观点与事实的边界。',
+    disclaimer: '测试网站   仅供参考   ',
+    homeTitle: '现实[太饿]   吃掉我[希望]',
+    homeDescription: '扯下黑心公司的遮羞布',
+    footerDescription: '测试网站   仅供参考',
     footerCopyright: '© 2026 Norest. All Rights Reserved.'
   },
   token: localStorage.getItem('admin_token'),

@@ -55,7 +55,7 @@ const Navbar = () => {
               </Link>
             )}
             <a 
-              href="https://github.com/C-4-C-4/996Norest" 
+              href="https://github.com" 
               target="_blank" 
               rel="noreferrer"
               className="flex items-center space-x-1 text-sm font-medium text-gray-300 hover:text-white transition-colors"
